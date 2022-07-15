@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск кандидата по имени</title>
+</head>
+<body>
+
+    <h1>Найдено кандидатов - {{ candidates|length }}</h2>
+    {% for worker in candidates %}
+        <p><a href="/candidate/{{ worker.id }}">{{ worker.name }}</a></p>
+    {% endfor %}
+
+</body>
+</html>
