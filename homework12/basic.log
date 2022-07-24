@@ -1,0 +1,51 @@
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:48] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:50] "[32mGET /search?s=wdsf HTTP/1.1[0m" 308 -
+INFO:root:Выполняю поиск
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:50] "GET /search/?s=wdsf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:50] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:51] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:51] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:54] "POST /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:54] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:54] "GET /upload/зуб.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:36:55] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Alexandr\\PycharmProjects\\pythonProject\\homework12\\loader\\views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug: * Detected change in 'C:\\Users\\Alexandr\\PycharmProjects\\pythonProject\\homework12\\loader\\views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug: * Detected change in 'C:\\Users\\Alexandr\\PycharmProjects\\pythonProject\\homework12\\loader\\views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug: * Detected change in 'C:\\Users\\Alexandr\\PycharmProjects\\pythonProject\\homework12\\loader\\views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug: * Detected change in 'C:\\Users\\Alexandr\\PycharmProjects\\pythonProject\\homework12\\main\\views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug: * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 132-869-538
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:39:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:39:58] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:39:59] "GET /post HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:39:59] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:40:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:40:00] "[33mGET /static/style.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:40:02] "[32mGET /search?s=sdf HTTP/1.1[0m" 308 -
+INFO:root:Выполняю поиск
+ERROR:root:File not found
+INFO:werkzeug:127.0.0.1 - - [24/Jul/2022 18:40:02] "GET /search/?s=sdf HTTP/1.1" 200 -
