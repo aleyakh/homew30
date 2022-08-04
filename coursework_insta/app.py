@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
-from utils import get_posts_all, get_comments_by_post_id, get_post_by_pk, search_for_posts, get_posts_by_user
+from flask import Flask, render_template, request, jsonify
+from utils import get_posts_all, get_comments_by_post_id, get_post_by_pk, search_for_posts, get_posts_by_user, logs
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 
 
 @app.get('/')
@@ -40,5 +41,19 @@ def http_500_handler(error):
     return "Ошибка 500 - Ошибка на стороне сервера!", 500
 
 
+@app.get('/api/posts')
+def api_posts():
+    posts = get_posts_all()
+    logs()
+    return jsonify(posts)
+
+
+@app.get('/api/post/<int:pk_post>')
+def api_post(pk_post):
+    post = get_post_by_pk(pk_post)
+    logs()
+    return jsonify(post)
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

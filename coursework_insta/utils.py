@@ -1,4 +1,5 @@
 import json
+import logging
 
 
 def get_posts_all(): #возвращает посты
@@ -23,7 +24,6 @@ def get_comments_by_post_id(post_id):   #возвращает комментар
         return result
 
 
-
 def search_for_posts(query):    #возвращает список постов по ключевому слову
     result = []
     for keyword in get_posts_all():
@@ -37,3 +37,8 @@ def search_for_posts(query):    #возвращает список постов 
 def get_post_by_pk(pk): #возвращает один пост по его идентификатору.
     pk_post = get_posts_all()
     return pk_post[pk-1]
+
+
+def logs():
+    logging.basicConfig(filename="logs/api.log", format='%(asctime)s [%(levelname)s] %(message)s')
+
