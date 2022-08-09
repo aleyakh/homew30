@@ -16,7 +16,12 @@ def index_page():
 
 @app.get('/post/<int:pk_post>')
 def post_page(pk_post):
-    return render_template('post.html', post=get_post_by_pk(pk_post), comments=get_comments_by_post_id(pk_post))
+    json_comments = get_comments_by_post_id(pk_post)
+    json_post = get_post_by_pk(pk_post)
+    if not json_post:
+        return 'ValueError - Такого поста не существует!'
+    else:
+        return render_template('post.html', post=json_post, comments=json_comments)
 
 
 @app.get('/search/')
@@ -28,7 +33,11 @@ def search_page():
 
 @app.get('/users/<string:user_post>')
 def user_page(user_post):
-    return render_template('user-feed.html', posts=get_posts_by_user(user_post))
+    json_posts = get_posts_by_user(user_post)
+    if not json_posts:
+        return 'ValueError - Пользователя с таким именем не существует!'
+    else:
+        return render_template('user-feed.html', posts=json_posts)
 
 
 @app.errorhandler(404)
