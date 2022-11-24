@@ -7,7 +7,6 @@ def test_one():
 
     response = app.test_client().get('/api/posts')
 
-
     assert response.status_code == 200, 'Запрашиваемая страница не найдена'
     assert type(response.json) == list, 'Полученные данные не являются списком'
 
