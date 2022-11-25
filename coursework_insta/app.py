@@ -2,8 +2,8 @@ from flask import Flask, render_template, request, jsonify
 from utils import get_posts_all, get_comments_by_post_id, get_post_by_pk, search_for_posts, get_posts_by_user, logs
 
 app = Flask(__name__)
-#app.config['JSON_AS_ASCII'] = False
-app.json.ensure_ascii = False
+app.config['JSON_AS_ASCII'] = False
+#app.json.ensure_ascii = False
 
 
 @app.get('/')
